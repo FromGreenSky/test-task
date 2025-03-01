@@ -22,17 +22,17 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+# Description
 
 This is [Nest](https://github.com/nestjs/nest) project for handling national holidays and integrating various APIs..
 
-## Installation
+# Installation
 Before running the project, install the dependencies:
 ```bash
 $ npm install
 ```
 
-## Environment Variables
+# Environment Variables
 Create a .env file and configure the following environment variables:
 ```bash
 $ DATABASE_URL=your_database_connection_string
@@ -40,7 +40,7 @@ $ NAGER_API_BASE_URL=https://date.nager.at/api/v3
 $ COUNTRIESNOW_API_BASE_URL=https://countriesnow.space/api/v0.1
 ```
 
-## Running the app
+# Running the app
 
 ```bash
 # Development mode
@@ -53,30 +53,30 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## API Endpoints
-# Users
+# API Endpoints
+## Users
 POST /users/:id/calendar/holidays – Add national holidays to the user’s calendar.
 GET /users/:id/calendar/holidays – Retrieve the user’s saved holidays.
-# Countries
+## Countries
 GET /countries/available – Get a list of available countries.
 GET /countries/:code – Get detailed information about a country.
 
-## Code Quality
+# Code Quality
 Ensure that all files are properly linted and formatted:
 ```bash
 $ npx eslint . --fix
 ```
 
-## Support
+# Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
+# Stay in touch
 
 - Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
 - Website - [https://nestjs.com](https://nestjs.com/)
 - Twitter - [@nestframework](https://twitter.com/nestframework)
 
-## License
+# License
 
 Nest is [MIT licensed](LICENSE).
