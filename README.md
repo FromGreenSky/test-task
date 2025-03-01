@@ -27,35 +27,44 @@
 This is [Nest](https://github.com/nestjs/nest) project for handling national holidays and integrating various APIs..
 
 ## Installation
-
+Before running the project, install the dependencies:
 ```bash
 $ npm install
+```
+
+## Environment Variables
+Create a .env file and configure the following environment variables:
+```bash
+$ DATABASE_URL=your_database_connection_string
+$ NAGER_API_BASE_URL=https://date.nager.at/api/v3
+$ COUNTRIESNOW_API_BASE_URL=https://countriesnow.space/api/v0.1
 ```
 
 ## Running the app
 
 ```bash
-# development
+# Development mode
 $ npm run start
 
-# watch mode
+# Watch mode
 $ npm run start:dev
 
-# production mode
+# Production mode
 $ npm run start:prod
 ```
 
-## Test
+## API Endpoints
+# Users
+POST /users/:id/calendar/holidays – Add national holidays to the user’s calendar.
+GET /users/:id/calendar/holidays – Retrieve the user’s saved holidays.
+# Countries
+GET /countries/available – Get a list of available countries.
+GET /countries/:code – Get detailed information about a country.
 
+## Code Quality
+Ensure that all files are properly linted and formatted:
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+$ npx eslint . --fix
 ```
 
 ## Support
